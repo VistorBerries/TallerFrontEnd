@@ -1,0 +1,3 @@
+Página en desarrollo.
+Trabajo colaborativo para el modulo 3 del Taller de desarrollo FrontEnd.
+En esta etapa, se solicita crear una web de 3 paginas con un formulario de contacto.

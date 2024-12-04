@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display:flexbox;
+    transition: all 1s ease;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    background-image: url(/img/Fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+    background-repeat: no-repeat;
+
+}
+.container{
+    /*Contenedor menu superior */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    transition: all 1s ease;
+    margin: 10px;
+    background-color: #c7eef3;
+    
+
+    /*border: solid thin blue;*/
+}
+
+.logo{
+    display: flex;
+    float: left;
+   
+    width: 250px;
+    padding: 20px 50px;
+    background-color: rgba(255, 228, 196, 0);
+    border-radius: 20px;
+    /*border: solid thin rgb(4, 255, 0);*/
+}
+
+.navegacion {
+    
+    text-align: right;
+    display: flex;
+	float: right;
+}
+
+.navegacion ul {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	
+}
+
+.navegacion ul li {
+	display: inline-block;
+	line-height: 80px;
+}
+			
+.navegacion ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+			
+.navegacion ul li a:hover {
+	background: #38525f71;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+}
+
+.bodyContent{
+    /*Contenido de la pagina*/
+    display: center;
+    height: 80%;
+    transition: all 1s ease;
+    margin: 10px;
+      /*border: solid thin red;*/
+}
+
+.Titulo{
+    display: left;
+    padding: 0 5%;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 100%;
+    background-color: rgba(167, 178, 180, 0.644);
+    /*border: solid thin red;*/
+}
+.subtitulo{
+    display: center;
+    padding: 0 5%;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 100%;
+    background-color: rgba(167, 178, 180, 0.644);
+
+    /*border: solid thin rgb(0, 110, 255);*/
+}
+.subtitulo3{
+    display: center;
+    padding: 0 5%;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 100%;
+    background-color: rgba(167, 178, 180, 0.644);
+
+    /*border: solid thin rgb(0, 255, 34);*/
+}
+.parrafo{
+    display: center;
+    padding: 0 5%;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 100%;
+    background-color: rgba(167, 178, 180, 0.644);
+
+    /*border: solid thin rgb(185, 1, 155);*/
+}
+
+
+H1{
+    color: #333;
+    font-size: 2rem;
+	line-height: 1.3em;
+	margin: 15px 1px;
+	text-align: left;
+	font-weight: 300;
+    unicode-bidi: isolate-override;
+   
+}
+h2{
+	font-size: 1.6em;
+    color: #14141a;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: left;
+	font-weight: 300;
+    unicode-bidi: isolate;
+}
+h3{
+	font-size: 1.2em;
+    color: #181526;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: left;
+	font-weight: 300;
+    unicode-bidi: isolate;
+}
+p {
+    color: #000000;
+    margin: 0 0 1.5em 0;
+
+
+}
+
+.footer{
+    /*Contenedor menu superior */
+    height: 50px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    transition: all 1s ease;
+    margin: 5px;
+    background-color: rgba(86, 86, 86, 0.29);
+
+    border: solid thin blue;
+}
+
+.navegacion {
+    
+    display: flex;
+	float: right;
+}
+
+.navegacion ul {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+    text-align: justify;
+	
+}
+
+.navegacion ul li {
+	display: inline-block;
+	line-height: 80px;
+}
+			
+.navegacion ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+			
+.navegacion ul li a:hover {
+	background: #38525f71;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    text-align: justify;
+}
+
+
+
+@media screen and (max-width:750px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    html{
+        font-size: 12px;
+    }
+    
+    .container{
+        height: 60px;
+        align-items: center;
+        padding: 5%;
+        
+    }
+    .logo{
+        padding: 5px;
+        margin: 5px;
+        width: 90px;
+        
+    }
+    .navegacion ul li {
+        display: inline-block;
+        line-height: 55px;
+    }
+    .navegacion ul li a:hover{
+        height: 55px;
+    }
+
+}

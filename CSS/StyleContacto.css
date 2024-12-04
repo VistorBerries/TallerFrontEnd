@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: center;
+    transition: all 1s ease;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    /*background-color: rgb(255, 255, 255);*/
+    background-image: url(/img/Fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+    background-repeat: no-repeat;
+
+}
+
+.container{
+    /*Contenedor menu superior */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    transition: all 1s ease;
+    margin: 10px;
+    background-color: #c7eef3;
+
+    /*border: solid thin blue;*/
+}
+
+.logo{
+    display: flex;
+    float: left;
+    width: 30%;
+    padding: 20px 50px;
+    background-color: rgba(255, 228, 196, 0);
+    border-radius: 20px;
+    /*border: solid thin rgb(4, 255, 0);*/
+}
+
+.navegacion {
+    
+    text-align: right;
+    display: flex;
+	float: right;
+    
+}
+
+.navegacion ul {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	
+}
+
+.navegacion ul li {
+	display: inline-block;
+	line-height: 80px;
+}
+			
+.navegacion ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+			
+.navegacion ul li a:hover {
+	background: #38525f71;
+    border-radius: 5px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+}
+
+.container-form{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+    /*border: solid thin rgb(0, 255, 221);*/
+
+}
+.informacion{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    text-align:  left;
+    background-color: #c7eef3;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+
+}
+
+.info-childs{
+    width: 100%;
+    padding: 0 30px;
+    
+}
+
+.info-childs h2{
+    font-size: 1.5rem;
+    color: #333;
+}
+.info-childs ul{
+    text-decoration: none;
+       
+}
+.info-childs a{
+    list-style: none;
+    display:block;
+    padding: 0 20px;
+    text-decoration: none;
+    
+    border: solid thin red;
+
+}
+
+.form-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.form-information-childs{
+    padding: 0 30px;
+}
+
+.form-information-childs h2{
+    color: #333;
+    font-size: 2rem;
+}
+.form-information-childs p{
+    color: #555;
+}
+
+.form{
+    margin: 30px 0 0 0;
+}
+.form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form label input{
+    width: 100%;padding: 10px;
+    background-color: #fff; 
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+.form label{
+    color: #a7a7a7;
+}
+
+.form input[type="submit"]{
+    background-color: #9191bd;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form input[type="submit"]:hover{
+    background-color: #7a7a9a
+}
+
+.footer{
+    /*Contenedor menu superior */
+    height: 50px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    transition: all 1s ease;
+    margin: 5px;
+    background-color: #c7eef3;
+
+    border: solid thin blue;
+}
+
+
+/* responsive form*/
+
+@media screen and (max-width:750px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    html{
+        font-size: 10px;
+    }
+    .container-form{
+        flex-direction: column;
+        
+
+    }
+    .informacion{
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        
+    }
+
+    .form-information{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+        
+
+    }
+    .form-information-childs{
+        align-items: baseline;
+    }
+    .container{
+        height: 60px;
+        align-items: center;
+        padding: 5%;
+        
+    }
+    .logo{
+        padding: 5px;
+        margin: 5px;
+        width: 90px;
+        
+    }
+    .navegacion ul li {
+        display: inline-block;
+        line-height: 55px;
+    }
+    .navegacion ul li a:hover{
+        height: 55px;
+    }
+
+}
+

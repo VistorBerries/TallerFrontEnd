@@ -119,6 +119,7 @@ body{
     box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
     height: 100%;
     background-color: rgba(167, 178, 180, 0.644);
+    text-align: center;
 
     /*border: solid thin rgb(185, 1, 155);*/
 }

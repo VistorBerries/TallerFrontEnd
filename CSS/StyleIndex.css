@@ -212,6 +212,26 @@ p {
     html{
         font-size: 12px;
     }
+    .container{
+        height: 60px;
+        align-items: center;
+        padding: 5%;
+        
+    }
+    .logo{
+        padding: 5px;
+        margin: 5px;
+        width: 90px;
+        
+    }
+    .navegacion ul li {
+        display: inline-block;
+        line-height: 55px;
+        text-align: justify;
+    }
+    .navegacion ul li a:hover{
+        height: 55px;
+    }
 }
 
 @media screen and (max-width:580px) {
@@ -234,6 +254,7 @@ p {
     .navegacion ul li {
         display: inline-block;
         line-height: 55px;
+        text-align: justify;
     }
     .navegacion ul li a:hover{
         height: 55px;
